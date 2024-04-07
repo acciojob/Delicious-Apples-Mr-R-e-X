@@ -1,1 +1,145 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #10e37f;
+}
+
+li {
+  list-style-type: none;
+}
+.product {
+  height: 86vh;
+  width: max-content;
+  margin: auto;
+  margin-top: 6vh;
+  display: flex;
+  background-color: white;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+}
+.product__photo {
+  height: max-content;
+  width: max-content;
+  margin-top: 10vh;
+  background-color: white;
+  position: relative;
+  left: -15%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 15px grey;
+  z-index: 99;
+}
+.photo-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #b9ea47;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.photo-main img {
+  position: relative;
+  transform: scale(1.1);
+  left: -10%;
+}
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  /* z-index: 99; */
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5% 0 5%;
+}
+.photo-album > ul {
+  display: flex;
+  padding: 3% 0 3% 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.photo-album > ul > li {
+  border: 1px solid grey;
+  margin: 2px;
+  border-radius: 10px;
+}
+.product__info {
+  margin-top: 10vh;
+  position: relative;
+  left: -11%;
+  padding: 1vh;
+  background-color: white;
+  z-index: 2;
+}
+.variant ul {
+  display: flex;
+  padding: 3% 0 3% 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.variant > ul > li {
+  border: 1px solid grey;
+  margin: 2px;
+  border-radius: 10px;
+}
+.description > ul {
+  position: relative;
+  left: 15%;
+}
+.description > ul > li {
+  list-style-type: disc;
+}
+.title {
+  color: rgb(85, 83, 83);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.title > span {
+  color: lightgray;
+  font-size: 1rem;
+}
+.price {
+  position: relative;
+  color: red;
+  margin-left: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+.price > span {
+  position: relative;
+  font-size: 3rem;
+  margin-left: 5px;
+  top: 8px;
+}
+.variant > h3 {
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.description > h3 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.description > button {
+  /* height: 50px; */
+  padding: 14px 32px;
+  margin-top: 15px;
+  background-color: red;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
